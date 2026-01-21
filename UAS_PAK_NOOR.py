@@ -4,7 +4,7 @@ print("==== GAME TEBAK ANGKA ====")
 nama = input("Masukan nama kamu: ")
 
 print("\n--- LEVEL 1 --- : PEMANASAN ---")
-print("Peraturan")
+print("Rules")
 print("1. Tebak angka dari 1 sampai 100")
 print("2. Kesempatan 15 kali")
 print("3. Tidak ada batas waktu")
@@ -35,11 +35,11 @@ for i in range(kesempatan):
         print("Angkaku lebih ke besar")
         skor -= 5
     else:
-        print(f"🎉 Selamat {nama}, tebakan kamu BENAR!")
+        print(f"Selamat {nama}, tebakan kamu BENAR!")
         skor += 20
         break
 else:
-    print("❌ Kesempatan habis!")
+    print("Kesempatan habis!")
     print(f"Angka yang benar adalah: {angka}")
     print("\n=== GAME SELESAI ===")
     print(f"Nama : {nama}")
@@ -72,12 +72,12 @@ for i in range(kesempatan):
         print("Angkaku lebih ke besar")
         skor -= 5
     else:
-        print("🎉 Tebakan kamu BENAR!")
+        print(f"Selamat {nama}, tebakan kamu BENAR!")
         skor += 30
         break
 else:
 
-    print("❌ Kesempatan habis!")
+    print(" Kesempatan habis!")
     print(f"Angka yang benar adalah: {angka}")
     print("\n=== GAME SELESAI ===")
     print(f"Skor akhir: {skor}")
@@ -109,11 +109,11 @@ for i in range(kesempatan):
         print("Angkaku lebih ke besar")
         skor -= 10
     else:
-        print("🔥 Tebakan kamu BENAR! Kamu menamatkan game!")
+        print(f"Selamat {nama}, tebakan kamu BENAR!")
         skor += 50
         break
 else:
-    print("❌ Kesempatan habis!")
+    print(" Kesempatan habis!")
     print(f"Angka yang benar adalah: {angka}")
 
 print("\n=== GAME SELESAI ===")
