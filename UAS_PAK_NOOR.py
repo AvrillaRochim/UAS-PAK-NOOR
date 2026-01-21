@@ -29,10 +29,10 @@ for i in range(kesempatan):
     tebakan = int(input("Masukkan tebakan kamu: "))
 
     if tebakan > angka:
-        print("Angkaku lebih ke bawah")
+        print("Angkaku lebih ke kecil")
         skor -= 5
     elif tebakan < angka:
-        print("Angkaku lebih ke atas")
+        print("Angkaku lebih ke besar")
         skor -= 5
     else:
         print(f"🎉 Selamat {nama}, tebakan kamu BENAR!")
@@ -66,10 +66,10 @@ for i in range(kesempatan):
     tebakan = int(input("Masukkan tebakan kamu: "))
 
     if tebakan > angka:
-        print("Angkaku lebih ke bawah")
+        print("Angkaku lebih ke kecil")
         skor -= 5
     elif tebakan < angka:
-        print("Angkaku lebih ke atas")
+        print("Angkaku lebih ke besar")
         skor -= 5
     else:
         print("🎉 Tebakan kamu BENAR!")
@@ -103,10 +103,10 @@ for i in range(kesempatan):
     tebakan = int(input("Masukkan tebakan kamu: "))
 
     if tebakan > angka:
-        print("Angkaku lebih ke bawah")
+        print("Angkaku lebih kecil")
         skor -= 10
     elif tebakan < angka:
-        print("Angkaku lebih ke atas")
+        print("Angkaku lebih ke besar")
         skor -= 10
     else:
         print("🔥 Tebakan kamu BENAR! Kamu menamatkan game!")
