@@ -1,26 +1,24 @@
 import random
 
 print("==== GAME TEBAK ANGKA ====")
-
+kesempatan  = 10  #
 while True:
     print("Rules")
     print("1. Tebak angka dari 1 sampai 100")
-    print("2. Kesempatan 10 kali")
+    print(f"2. Kesempatan {kesempatan} kali")
     print("3. Tidak ada batas waktu")
     print("4. Setiap tebakan akan diberi petunjuk apakah angka terlalu ke besar atau terlalu ke kecil")
-    kesempatan  = 10  #
+    
 
     angka = random.randint(1, 100)
+    angka = 9
 
 
     print("\nSaya sudah memilih angka antara 1 sampai 100")
 
     while kesempatan > 0:
-            try:
-                tebakan = int(input("Masukkan tebakan kamu: "))
-            except ValueError:
-                print("Harap Isi nominal yang benar")
-                continue
+            tebakan = int(input("Masukkan tebakan kamu: "))
+
 
             if tebakan > angka:
                 print("Angkaku lebih ke kecil")
@@ -38,5 +36,7 @@ while True:
 
     ulang = input("\nApakah anda ingin mengulang? (y/n)")
     if ulang != 'y':
-     print("terimakasih telah bermain")
-     break
+         print("terimakasih telah bermain")
+         break
+    else:
+        kesempatan -=1 
