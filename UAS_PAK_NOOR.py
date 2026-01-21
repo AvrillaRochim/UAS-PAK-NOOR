@@ -3,7 +3,7 @@ import random
 print("==== GAME TEBAK ANGKA ====")
 nama = input("Masukan nama kamu: ")
 
-print("\n--- LEVEL 1 --- : PEMANASAN ---")
+print("\nLEVEL 1 : PEMANASAN")
 print("Rules")
 print("1. Tebak angka dari 1 sampai 100")
 print("2. Kesempatan 15 kali")
@@ -47,47 +47,8 @@ else:
     exit()
 
 # ================= LEVEL 2 =================
-print("\n--- LEVEL 2 --- : MENENGAH ---")
-print("Peraturan")
-print("1. Tebak angka dari 1 sampai 250")
-print("2. Kesempatan 15 kali")
-
-
-batas_bawah = 1
-batas_atas  = 250
-kesempatan  = 15
-
-angka = random.randint(batas_bawah, batas_atas)
-
-for i in range(kesempatan):
-    print(f"\nKesempatan ke-{i+1}")
-    print(f"Skor saat ini: {skor}")
-
-    tebakan = int(input("Masukkan tebakan kamu: "))
-
-    if tebakan > angka:
-        print("Angkaku lebih ke kecil")
-        skor -= 5
-    elif tebakan < angka:
-        print("Angkaku lebih ke besar")
-        skor -= 5
-    else:
-        print(f"Selamat {nama}, tebakan kamu BENAR!")
-        skor += 30
-        break
-else:
-
-    print(" Kesempatan habis!")
-    print(f"Angka yang benar adalah: {angka}")
-    print("\n=== GAME SELESAI ===")
-    print(f"Skor akhir: {skor}")
-    exit()
-
-# ================= LEVEL 3 =================
-print("\n--- LEVEL 3 --- : HARD ---")
-print("Rules")
-print("1. Tebak angka dari 1 sampai 500")
-print("2. Kesempatan 15 kali")
+print("\nLEVEL 2: SERIUS")
+print("Rules sama seperti sebelumnya")
 
 
 batas_bawah = 1
